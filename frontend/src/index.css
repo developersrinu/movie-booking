@@ -1,0 +1,52 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --blue:#030F65;
+}
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.zoomedImage {
+    object-fit: cover;
+    height: 50%;
+    transition: transform 0.3s ease;
+}
+
+.zoomedImage:hover {
+    transform: scale(1.1); /* Increase scale to zoom in */
+}
+
+.bookImg{
+    border-radius: 20px;
+}
+
+.inptype{
+    width: 100%;
+    height: 50%;
+    border: 2px solid var(--blue);
+    border-radius: 20px;
+    color: var(--blue);
+    padding-left: 4px;
+}
+.inptype:focus{
+    border: 2px solid var(--blue);
+}
+
+
+
+
+@media screen and (max-width:600px) {
+    #userProfile{
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+    }
+}
