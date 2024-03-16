@@ -14,8 +14,6 @@ const Header = () => {
 	const isAdminLogedIn = useSelector(state => state.admin.isLogedIn);
 
 
-	
-
 
 	const toggleDrawer = () => {
 		setDrawerOpen(!drawerOpen);
@@ -45,11 +43,6 @@ const Header = () => {
 	}
 
 
-
-
-
-
-
 	return (
 		<AppBar position='stickey' sx={{ bgcolor: 'var(--blue)', padding: '3px', height: "65px" }}>
 			<Toolbar className="flex justify-between items-center">
@@ -58,9 +51,6 @@ const Header = () => {
 						<MovieFilterIcon fontSize="large" />
 					</Link>
 				</Box>
-
-			
-
 
 				{isSmallScreen ? (
 					// Render hamburger icon for small screens
@@ -91,8 +81,6 @@ const Header = () => {
 						{
 							isAdminLogedIn && (
 								<>
-
-
 
 									<Box className="hover:border-b-2 cursor-pointer">
 										<Link to='/adminprofile'>admin profile</Link>

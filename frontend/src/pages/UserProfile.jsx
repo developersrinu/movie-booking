@@ -95,6 +95,14 @@ const UserProfile = () => {
                       </ListItemText>
 
                       <ListItemText sx={{ margin: 1, width: "auto", textAlign: 'left' }}>
+                      theater: {booking.theater ? booking.theater : 'not available'}
+                      </ListItemText>
+
+                      <ListItemText sx={{ margin: 1, width: "auto", textAlign: 'left' }}>
+                        slot: {booking.slot ? booking.slot : 'not available'}
+                      </ListItemText>
+
+                      <ListItemText sx={{ margin: 1, width: "auto", textAlign: 'left' }}>
                         <DeleteIcon fontSize='large' onClick={() => handledeleteBookingbyId(booking._id)} />
                       </ListItemText>
                     </ListItem>

@@ -5,7 +5,7 @@ const User = require('../models/userModel');
 
 
 const newBooking = async (req, res, next) => {
-  const { movie, date, seatNumber, user } = req.body;
+  const { movie, date, seatNumber, user,theater,slot } = req.body;
 
   let existingMovie;
   let existingUser;
@@ -33,6 +33,8 @@ const newBooking = async (req, res, next) => {
       date: new Date(date),
       seatNumber,
       user,
+      theater,
+      slot,
     });
 
     const session = await mongoose.startSession();

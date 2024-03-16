@@ -59,7 +59,7 @@ const MovieCard = ({ title, desc, posterUrl, date, id }) => {
             </Link>
           </Button>
 
-
+ 
         </CardActions>
       </Box>
     </Card>

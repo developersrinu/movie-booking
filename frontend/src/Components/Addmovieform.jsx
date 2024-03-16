@@ -9,18 +9,15 @@ const Addmovieform = () => {
                 <label>
                     <span>Email</span>
                     <input class="input" type="email" placeholder="" required="" />
-
                 </label>
 
                 <label>
                     <span>Password</span>
                     <input class="input" type="password" placeholder="" required="" />
-
                 </label>
                 <label>
                     <span>Confirm password</span>
                     <input class="input" type="password" placeholder="" required="" />
-
                 </label>
                 <button class="submit">Submit</button>
             </form>
